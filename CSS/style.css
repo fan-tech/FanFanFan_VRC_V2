@@ -131,7 +131,7 @@ p {
 }
 
 @media screen and (max-width: 768px) {
-  .activity {
+  .about {
     background-position: top right;
     /* 背景画像を右上に配置 */
     background-size: cover;
