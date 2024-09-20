@@ -1,0 +1,93 @@
+<!DOCTYPE html>
+<html lang="ja">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <link rel="stylesheet" href="./css/style.css" />
+    <script>
+      (function (d) {
+        var config = {
+            kitId: "vma5fmr",
+            scriptTimeout: 3000,
+            async: true,
+          },
+          h = d.documentElement,
+          t = setTimeout(function () {
+            h.className =
+              h.className.replace(/\bwf-loading\b/g, "") + " wf-inactive";
+          }, config.scriptTimeout),
+          tk = d.createElement("script"),
+          f = false,
+          s = d.getElementsByTagName("script")[0],
+          a;
+        h.className += " wf-loading";
+        tk.src = "https://use.typekit.net/" + config.kitId + ".js";
+        tk.async = true;
+        tk.onload = tk.onreadystatechange = function () {
+          a = this.readyState;
+          if (f || (a && a != "complete" && a != "loaded")) return;
+          f = true;
+          clearTimeout(t);
+          try {
+            Typekit.load(config);
+          } catch (e) {}
+        };
+        s.parentNode.insertBefore(tk, s);
+      })(document);
+    </script>
+    <title>FANFANFAN</title>
+  </head>
+  <body>
+    <!-- 各セクション -->
+    <div class="section top">
+      <div class="CC">
+        <h1>FANFANFAN</h1>
+        <p>Fan N'o'to by your side!</p>
+      </div>
+    </div>
+    <div class="section about">
+      <div class="CC">
+        <h2>About Fan</h2>
+        <p>なまえ：ふぁんのおと</p>
+        <p>活動場所 : VRChat</p>
+        <p>すき : おんがく、ゲーム（FF14）、お友達とお話すること</p>
+        <p>
+          にがて :
+          生トマト、セロリとか香りの高いと言われてる野菜、仲良くないのに距離感が近い方
+        </p>
+      </div>
+    </div>
+    <div class="section activity">
+      <div class="CC">
+        <h2>Activity</h2>
+        <p>VRでたまにお歌を歌っています!</p>
+        <p>気分でYoutubeにて練習を公開しています</p>
+        <p>VRCグループもあります！活動のお知らせがほしい方はチェックしてね！</p>
+      </div>
+    </div>
+    <div class="section contact">
+      <div class="CC">
+        <h2>Contact</h2>
+        <p>
+          Twitter:
+          <a href="https://x.com/Fan_VRC_" target="_blank">@Fan_VRC_</a>
+        </p>
+        <p>
+          note : <a href="https://note.com/fannoto/" target="_blank">fannoto</a>
+        </p>
+        <p>
+          Youtube :
+          <a href="https://www.youtube.com/@FanNoto" target="_blank"
+            >FanN'o'to by your side!</a
+          >
+        </p>
+        <p>
+          VRCグループ :
+          <a href="https://vrc.group/FAN.2800" target="_blank">FANFANFAN</a>
+        </p>
+      </div>
+    </div>
+
+    <script type="text/javascript" src="js/main.js"></script>
+  </body>
+</html>
