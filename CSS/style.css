@@ -76,14 +76,18 @@ p {
 .CC {
   background-color: rgba(0, 0, 0, 0.5);
   border-radius: 60px;
-  width: 40%;
-  height: 40%;
+  width: auto;
+  height: auto;
   color: white;
   text-align: center;
   display: flex;
   justify-content: center;
   align-items: center;
   flex-direction: column;
+  padding-top: 20px;
+  padding-bottom: 40px;
+  padding-left: 25px;
+  padding-right: 25px;
 }
 
 .top {
