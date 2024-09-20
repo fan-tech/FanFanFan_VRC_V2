@@ -137,4 +137,11 @@ p {
     background-size: cover;
     /* 画像を画面いっぱいに表示 */
   }
+
+  .contact {
+    background-position: top left;
+    /* 背景画像を右上に配置 */
+    background-size: cover;
+    /* 画像を画面いっぱいに表示 */
+  }
 }
