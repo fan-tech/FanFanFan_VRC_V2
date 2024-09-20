@@ -8,6 +8,29 @@ document.addEventListener("wheel", (event) => {
   }
 });
 
+// スワイプの処理を追加
+let touchStartY = 0;
+let touchEndY = 0;
+
+document.addEventListener("touchstart", (event) => {
+  touchStartY = event.changedTouches[0].screenY;
+});
+
+document.addEventListener("touchend", (event) => {
+  touchEndY = event.changedTouches[0].screenY;
+  handleSwipe();
+});
+
+function handleSwipe() {
+  if (touchStartY - touchEndY > 50) {
+    // 上にスワイプ
+    scrollNext();
+  } else if (touchEndY - touchStartY > 50) {
+    // 下にスワイプ
+    scrollPrev();
+  }
+}
+
 let currentSection = 0;
 const sections = document.querySelectorAll(".section");
 
