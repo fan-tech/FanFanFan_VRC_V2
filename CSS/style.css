@@ -129,3 +129,12 @@ p {
   height: 100vh;
 
 }
+
+@media screen and (max-width: 768px) {
+  .activity {
+    background-position: top right;
+    /* 背景画像を右上に配置 */
+    background-size: cover;
+    /* 画像を画面いっぱいに表示 */
+  }
+}
