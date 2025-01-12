@@ -67,3 +67,12 @@ window.addEventListener("scroll", () => {
     }
   });
 });
+
+document.querySelectorAll(".next-section-btn").forEach((button, index) => {
+  button.addEventListener("click", (event) => {
+    event.preventDefault(); // デフォルトのリンク動作を無効化
+    const sections = document.querySelectorAll(".section");
+    const nextIndex = (index + 1) % sections.length; // 次のセクションを取得（最後なら最初に戻る）
+    sections[nextIndex].scrollIntoView({ behavior: "smooth" }); // スムーズスクロール
+  });
+});

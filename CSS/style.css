@@ -6,6 +6,8 @@ body, html {
   font-family: "kaisei-opti", sans-serif;
   font-weight: 400;
   font-style: normal;
+  scroll-behavior: smooth;
+  /* スムーズスクロールを有効化 */
 }
 
 a {
@@ -71,6 +73,8 @@ p {
   align-items: center;
   text-align: center;
   font-size: 24px;
+  display: flex;
+  position: relative;
 }
 
 .CC {
@@ -128,6 +132,37 @@ p {
   width: 100%;
   height: 100vh;
 
+}
+
+.btn-circle-border-double {
+  position: absolute;
+  /* セクション内で絶対位置 */
+  bottom: 20px;
+  /* 下から20pxに配置 */
+  left: 50%;
+  /* 水平方向の中央揃え */
+  transform: translateX(-50%);
+  /* 中央揃えのためにX方向に移動 */
+  display: inline-block;
+  text-decoration: none;
+  color: #668ad8;
+  width: 70px;
+  height: 70px;
+  line-height: 70px;
+  border-radius: 50%;
+  /* 円形にする */
+  border: double 4px white;
+  /* 二重線のボーダー */
+  text-align: center;
+  overflow: hidden;
+  transition: transform 0.6s ease;
+  /* アニメーションをスムーズに */
+  font-size: 15px;
+}
+
+.btn-circle-border-double:hover {
+  transform: translateX(-50%) rotateY(360deg);
+  /* X方向中央揃えを保ちながら回転 */
 }
 
 @media screen and (max-width: 768px) {
